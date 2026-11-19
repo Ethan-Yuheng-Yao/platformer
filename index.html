@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JUST ROLL — a tiny test of trust</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="./index.html">JUST ROLL<span>•</span></a><span class="edition">A TINY TEST OF TRUST / 001</span></header>
+    <section class="intro"><div><div class="eyebrow">FIFTEEN LEVELS. WHAT COULD GO WRONG?</div><h1>Seems simple enough.</h1><p>Roll to the blue orb. Try to stay optimistic.</p></div><div class="level-tag" id="levelTag">01 <span>/ 15</span></div></section>
+    <section class="game-shell" aria-label="Platform game">
+      <div class="game-bar"><span><i></i><span id="levelName">LEVEL 01 — A WARM WELCOME</span></span><div class="game-actions"><span id="deaths">FALLS 00</span><button id="fullscreen">Fullscreen ↗</button></div></div>
+      <canvas id="game" width="960" height="540" tabindex="0" aria-label="Use A and D or left and right arrows to roll. W, up arrow or space to jump. Reach the blue orb."></canvas>
+      <div class="overlay" id="overlay" hidden><div class="eyebrow">AGAINST ALL ODDS</div><h2>You made it.</h2><p id="result"></p><button id="playAgain">Choose a level ↗</button></div>
+      <div class="overlay start-screen" id="startScreen" role="dialog" aria-modal="true" aria-labelledby="startTitle">
+        <div class="eyebrow">FIFTEEN LEVELS. WHAT COULD GO WRONG?</div><h2 id="startTitle">JUST ROLL.</h2>
+        <p>Start at level 1, or replay a level you’ve beaten.</p>
+        <div id="levelChoices" class="level-choices"></div>
+        <p class="menu-controls">A / D or ← / → to roll · W / ↑ to jump</p>
+      </div>
+      <div class="game-bottom"><span id="hint" aria-live="polite">A little leap of faith.</span><div class="game-actions"><button id="menu">Levels</button><button id="restart">Restart level <kbd>R</kbd></button></div></div>
+    </section>
+    <footer><div class="controls"><span><kbd>A</kbd><kbd>D</kbd> or <kbd>←</kbd><kbd>→</kbd> <b>roll</b></span><span><kbd>W</kbd> or <kbd>↑</kbd> <b>jump</b></span></div><span class="footnote">YES, YOU CAN CHANGE YOUR MIND MID-AIR.</span></footer>
+    <div class="touch-controls" aria-label="Touch controls"><button data-key="ArrowLeft" aria-label="Roll left">←</button><button data-key="ArrowRight" aria-label="Roll right">→</button><button data-key="ArrowUp" aria-label="Jump">↑</button></div>
+  </main>
+  <script src="challenges.js"></script>
+  <script src="aftermath.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
